@@ -34,10 +34,18 @@ end
 
 puts "Welcome to Blackjack!!!"
 puts ""
-puts "How many deck of cards? Enter from 1 - 6:"
-n = gets.chomp.to_i
 
-if ![1,2,3,4,5,6].include? n then clear_exit end
+n = 0
+while ![1,2,3,4,5,6].include? n
+  puts "How many deck of cards? Enter from 1 - 6:"
+  n = gets.chomp.to_i
+end
+
+#n = gets.chomp.to_i
+
+#if ![1,2,3,4,5,6].include? n then clear_exit end
+
+
 
 suits = []
 for i in 1..n do
